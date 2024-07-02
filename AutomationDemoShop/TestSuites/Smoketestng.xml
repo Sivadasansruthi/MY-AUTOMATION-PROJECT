@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  
+	<groups>
+		<run>
+			<include name="Smoke"></include>
+		</run>
+	</groups>
+	
+	<listeners>
+		<listener class-name="listeners.ReportListeners"></listener>
+	</listeners>
+	
+	<test name="Subscribe Test">
+		<classes>
+			<class name="com.demowebshop.tests.SubscribeTest" />
+		</classes>
+	</test>
+
+	<test name="Login Test">
+		<classes>
+			<class name="com.demowebshop.tests.LoginTest" />
+		</classes>
+	</test>
+
+	<test name="Search Test">
+		<classes>
+			<class name="com.demowebshop.tests.SearchTest" />
+		</classes>
+	</test>
+
+	<test name="Registeration Test">
+		<classes>
+
+			<class name="com.demowebshop.tests.RegisterationTest" />
+		</classes>
+	</test>
+
+	<test name="Registeration Test DP">
+		<classes>
+			<class name="com.demowebshop.tests.RegisterationDP" />
+
+		</classes>
+	</test>
+	
+	
+	<test name="Excel Registeration Test">
+		<classes>
+			<class name="com.demowebshop.tests.DataRegisteration" />
+		</classes>
+	</test>
+
+</suite> <!-- Suite -->

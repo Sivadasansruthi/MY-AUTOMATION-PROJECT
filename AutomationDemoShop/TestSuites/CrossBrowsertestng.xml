@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="7">
+<listeners>
+		<listener class-name="listeners.ReportListeners"></listener>
+	</listeners>
+	<test name="Subscribe Test">
+		<parameter name="browserName" value="Chrome"></parameter>
+		<classes>
+			<class name="com.demowebshop.tests.SubscribeTest" />
+		</classes>
+	</test>
+
+	<test name="Login Test">
+		<parameter name="browserName" value="edge"></parameter>
+		<classes>
+			<class name="com.demowebshop.tests.LoginTest" />
+		</classes>
+	</test>
+
+	<test name="Search Test">
+		<parameter name="browserName" value="edge"></parameter>
+		<classes>
+			<class name="com.demowebshop.tests.SearchTest" />
+		</classes>
+	</test>
+
+	<test name="Registeration Test">
+		<parameter name="browserName" value="edge"></parameter>
+		<classes>
+			<class name="com.demowebshop.tests.RegisterationTest" />
+		</classes>
+	</test>
+
+	<test name="Registeration Test DP">
+		<parameter name="browserName" value="Chrome"></parameter>
+		<classes>
+			<class name="com.demowebshop.tests.RegisterationDP" />
+
+		</classes>
+	</test>
+	
+	
+	<test name="Excel Registeration Test">
+		<parameter name="browserName" value="firefox"></parameter>
+		<classes>
+			<class name="com.demowebshop.tests.DataRegisteration" />
+		</classes>
+	</test>
+	
+		<test name="Purchase Test">
+			<parameter name="browserName" value="firefox"></parameter>
+		<classes>
+			<class name="com.demowebshop.tests.PurchaseTest" />
+		</classes>
+		</test>
+		
+	<test name="AddWishlistTest">
+		<parameter name="browserName" value="firefox"></parameter>
+		<classes>
+			<class name="com.demowebshop.tests.AddItemToWishlistTest" />
+		</classes>
+		
+	</test>
+	
+	<test name="RemoveWishlistTest">
+		<parameter name="browserName" value="Chrome"></parameter>
+		<classes>
+			<class name="com.demowebshop.tests.RemoveItemfromWishlistTest" />
+		</classes>
+		
+	</test>
+	
+	<test name="SendEmailTest">
+		<parameter name="browserName" value="Chrome"></parameter>
+		<classes>
+			<class name="com.demowebshop.tests.SendEmailTest" />
+		</classes>
+		
+	</test>
+	
+		
+		
+
+	
+		
+ 
+</suite> <!-- Suite -->
